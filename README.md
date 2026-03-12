@@ -79,22 +79,6 @@ The analysis followed a typical data analysis process:
 
 ---
 
-## Project Structure
-taylor-swift-spotify-analysis
-│
-├── exploratory-data-analysis-taylor-swift.ipynb
-├── README.md
-└── charts.csv (dataset)
-
----
-
-## How to Run the Project
-To view the analysis:
-1. Download or clone this repository
-2. Open the file `exploratory-data-analysis-taylor-swift.ipynb`
-3. Run the notebook using **Jupyter Notebook** or **Google Colab**
-
----
 
 ## Author
 Student Data Analysis Project  
