@@ -1,57 +1,102 @@
-# Taylor Swift Spotify Chart Analysis
+# Taylor Swift Spotify Charts Analysis
 
 ## Project Overview
-This project explores the popularity trends of Taylor Swift songs on Spotify using historical Spotify Charts data. The analysis focuses on understanding how Taylor Swift songs perform on the Spotify Top 200 and Viral 50 charts over time.
+This project performs an **Exploratory Data Analysis (EDA)** on Spotify chart data to examine the popularity and performance of Taylor Swift's songs over time.  
 
-The goal of this project is to examine streaming patterns and identify how long certain songs remain popular among listeners.
+Using a large Spotify charts dataset (~3.4GB), this analysis focuses on how certain songs maintain popularity and how their performance changes across Spotify chart categories such as **Top 200** and **Viral 50**.
 
-## Dataset
-The dataset used in this project is the **Spotify Charts dataset**, which contains daily streaming information for songs appearing in Spotify charts.
+The project particularly explores the chart performance of several Taylor Swift songs, including **Lover**, **Delicate**, and **Love Story (Taylor's Version)**, to understand patterns of long-term popularity and viral streaming behavior.
 
-Source:
-Kaggle – Spotify Charts Dataset
-
-The dataset includes the following variables:
-
-- Artist
-- Song Title
-- Date
-- Chart Rank
-- Streams
-- Chart Type (Top 200 / Viral 50)
-
-## Tools and Technologies
-The following tools were used in this analysis:
-
-- Python
-- PySpark
-- Jupyter Notebook
-- Pandas
-- Data Visualization Libraries
+---
 
 ## Project Objectives
-The main objective of this analysis is to answer the following question:
+The main objectives of this project are:
 
-**How do Taylor Swift songs perform on Spotify charts over time in terms of popularity and longevity?**
+- To analyze the performance of Taylor Swift songs on Spotify charts
+- To understand trends in song popularity over time
+- To compare long-term chart longevity versus short viral peaks
+- To identify how streaming behavior influences chart rankings
 
-## Analysis Process
-The project follows a standard data analysis workflow:
+---
 
-1. Data Collection  
-   Importing Spotify chart data from the dataset.
+## Dataset
+The dataset used in this project comes from the **Spotify Charts dataset** available on Kaggle.
+It contains daily chart information for songs appearing on Spotify charts worldwide.
 
-2. Data Cleaning  
-   Filtering the dataset to include only Taylor Swift songs.
+### Dataset Features
+The dataset includes the following attributes:
 
-3. Exploratory Data Analysis (EDA)  
-   Analyzing streaming numbers and chart rankings to observe popularity trends.
+- **Artist** – Name of the artist
+- **Song Title** – Title of the track
+- **Date** – Daily chart record date
+- **Rank** – Song position on the chart
+- **Streams** – Number of daily streams
+- **Chart Type** – Chart category (Top 200 / Viral 50)
 
-4. Visualization  
-   Creating visual representations of song performance over time.
+This dataset enables analysis of how songs move across charts and how long they remain popular.
+
+---
+
+## Tools & Technologies
+The analysis was conducted using the following tools:
+
+- **Python** – Main programming language
+- **Apache Spark (PySpark)** – Used for handling large-scale data processing
+- **Pandas** – Data manipulation and aggregation
+- **Matplotlib & Seaborn** – Data visualization
+- **Jupyter Notebook** – Interactive analysis environment
+
+---
 
 ## Key Insights
-This analysis helps illustrate how certain Taylor Swift songs maintain popularity on Spotify charts and how streaming behavior changes over time.
+From the exploratory analysis of Taylor Swift songs, several insights were observed:
+
+### 1️. Chart Longevity
+The song **Lover** shows strong long-term popularity and continues to appear in Spotify charts over an extended period. This indicates consistent listener engagement.
+
+### 2️. Viral Peaks
+Songs such as **Love Story (Taylor’s Version)** experienced a strong surge in popularity shortly after release, demonstrating how new releases often generate temporary viral spikes.
+
+### 3️. Song Lifecycle
+The song **Delicate** showed strong performance between **2018 and 2020** before gradually declining, illustrating the natural lifecycle of many popular songs.
+
+---
+
+## Analysis Workflow
+The analysis followed a typical data analysis process:
+
+1. **Data Collection**  
+   Importing the Spotify chart dataset.
+
+2. **Data Cleaning**  
+   Filtering the dataset to focus on Taylor Swift songs.
+
+3. **Exploratory Data Analysis (EDA)**  
+   Examining streaming numbers and chart rankings.
+
+4. **Visualization**  
+   Creating charts to observe trends and popularity patterns.
+
+---
+
+## Project Structure
+taylor-swift-spotify-analysis
+│
+├── exploratory-data-analysis-taylor-swift.ipynb
+├── README.md
+└── charts.csv (dataset)
+
+---
+
+## How to Run the Project
+To view the analysis:
+1. Download or clone this repository
+2. Open the file `exploratory-data-analysis-taylor-swift.ipynb`
+3. Run the notebook using **Jupyter Notebook** or **Google Colab**
+
+---
 
 ## Author
 Student Data Analysis Project  
-Course: Data Warehouse and Business Intelligence
+Course: **Data Warehouse and Business Intelligence**
+Project Topic: **Spotify Chart Analysis of Taylor Swift Songs**
